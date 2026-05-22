@@ -14,7 +14,6 @@ public class Usuario {
     private String email;
     private String telefono;
     private String direccion;
-    private TipoUsuario tipo; // CLIENTE, NEGOCIO, ADMIN
     private List<Compra> compras;
-    private List<Venta> ventas; // si el usuario también puede vender
+    private Inventario inventario;
 }

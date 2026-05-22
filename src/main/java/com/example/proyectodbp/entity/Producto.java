@@ -11,7 +11,7 @@ public class Producto {
     private Long id;
     private String nombre;
     private String descripcion;
-    private Integer precio;
+    private Double precio;
     private Categoria categoria;
     private Inventario inventario;
 }

@@ -10,5 +10,4 @@ public class Inventario {
     private Long id;
     private Producto producto;
     private int cantidadDisponible;
-    private int cantidadMinima;
 }
