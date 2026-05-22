@@ -30,7 +30,7 @@ public class Compra {
 
     @Positive
     @NotNull
-    @Column(nullable = false, precision = 12, scale = 2)
+    @Column(nullable = false)
     private Double total;
 
     @NotNull

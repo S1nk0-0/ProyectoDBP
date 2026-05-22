@@ -1,4 +1,10 @@
 package com.example.proyectodbp.repository;
 
-public class CompraRepository {
+import com.example.proyectodbp.entity.Compra;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface CompraRepository extends JpaRepository<Compra, Long> {
+    List<Compra> findByUsuarioId(Long usuarioId);
 }

@@ -13,7 +13,7 @@ import com.example.proyectodbp.entity.Rol;
 import com.example.proyectodbp.entity.Usuario;
 import com.example.proyectodbp.exception.ResourceNotFoundException;
 import com.example.proyectodbp.repository.CompraRepository;
-import com.example.proyectodbp.repository.DetalleCompraRepository;
+import com.example.proyectodbp.repository.DetalleDeCompraRepository;
 import com.example.proyectodbp.repository.InventarioRepository;
 import com.example.proyectodbp.repository.ProductoRepository;
 import com.example.proyectodbp.repository.UsuarioRepository;
@@ -31,13 +31,13 @@ import java.util.List;
 public class CompraServiceImpl implements CompraService {
 
     private final CompraRepository compraRepository;
-    private final DetalleCompraRepository detalleCompraRepository;
+    private final DetalleDeCompraRepository detalleCompraRepository;
     private final UsuarioRepository usuarioRepository;
     private final ProductoRepository productoRepository;
     private final InventarioRepository inventarioRepository;
 
     public CompraServiceImpl(CompraRepository compraRepository,
-                              DetalleCompraRepository detalleCompraRepository,
+                              DetalleDeCompraRepository detalleCompraRepository,
                               UsuarioRepository usuarioRepository,
                               ProductoRepository productoRepository,
                               InventarioRepository inventarioRepository) {

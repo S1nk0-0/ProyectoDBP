@@ -33,12 +33,12 @@ public class DetalleCompra {
 
     @Positive
     @NotNull
-    @Column(nullable = false, precision = 12, scale = 2)
+    @Column(nullable = false)
     private Double precioUnitario;
 
     @PositiveOrZero
     @NotNull
-    @Column(nullable = false, precision = 12, scale = 2)
+    @Column(nullable = false)
     private Double subtotal;
 }
 
