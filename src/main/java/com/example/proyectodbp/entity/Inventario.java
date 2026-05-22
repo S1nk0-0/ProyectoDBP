@@ -24,4 +24,11 @@ public class Inventario {
     @PositiveOrZero
     @Column(nullable = false)
     private int cantidadDisponible;
+
+    @PositiveOrZero
+    @Column(nullable = false)
+    private int stockMinimo;
+    // cuanto de esto tengo que tener minimo antes de que necesite comprar mas
+
+
 }
