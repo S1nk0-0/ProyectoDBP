@@ -7,8 +7,6 @@ Relaciones:
 
 
 
-Pendientes :
-1. Repositorios por entidad.
-3. Servicios — lógica: al registrar una Compra, actualizar Inventario.cantidadDisponible; al registrar una Venta, decrementarlo. dar una alerta cuando llega al stock minimo
-5. Controladores  
+TODO's :
+1. Repositorios por entidad. faltan los comandos
 6. application.properties configurar  PostgreSQL.
