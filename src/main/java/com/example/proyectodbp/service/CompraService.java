@@ -1,7 +1,7 @@
 package com.example.proyectodbp.service;
 
-import com.example.proyectodbp.dto.CompraRequestDTO;
-import com.example.proyectodbp.dto.CompraResponseDTO;
+import com.example.proyectodbp.dto.request.CompraRequestDTO;
+import com.example.proyectodbp.dto.response.CompraResponseDTO;
 import com.example.proyectodbp.entity.EstadoCompra;
 
 import java.util.List;

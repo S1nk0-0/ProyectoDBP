@@ -1,7 +1,7 @@
 package com.example.proyectodbp.service.impl;
 
-import com.example.proyectodbp.dto.InventarioRequestDTO;
-import com.example.proyectodbp.dto.InventarioResponseDTO;
+import com.example.proyectodbp.dto.request.InventarioRequestDTO;
+import com.example.proyectodbp.dto.response.InventarioResponseDTO;
 import com.example.proyectodbp.entity.Inventario;
 import com.example.proyectodbp.exception.ResourceNotFoundException;
 import com.example.proyectodbp.repository.InventarioRepository;

@@ -1,7 +1,7 @@
 package com.example.proyectodbp.controller;
 
-import com.example.proyectodbp.dto.ProductoRequestDTO;
-import com.example.proyectodbp.dto.ProductoResponseDTO;
+import com.example.proyectodbp.dto.request.ProductoRequestDTO;
+import com.example.proyectodbp.dto.response.ProductoResponseDTO;
 import com.example.proyectodbp.service.ProductoService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;

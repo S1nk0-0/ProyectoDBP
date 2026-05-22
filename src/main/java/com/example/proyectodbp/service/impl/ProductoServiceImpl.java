@@ -1,7 +1,7 @@
 package com.example.proyectodbp.service.impl;
 
-import com.example.proyectodbp.dto.ProductoRequestDTO;
-import com.example.proyectodbp.dto.ProductoResponseDTO;
+import com.example.proyectodbp.dto.request.ProductoRequestDTO;
+import com.example.proyectodbp.dto.response.ProductoResponseDTO;
 import com.example.proyectodbp.entity.Categoria;
 import com.example.proyectodbp.entity.Producto;
 import com.example.proyectodbp.exception.ResourceNotFoundException;

@@ -1,7 +1,7 @@
 package com.example.proyectodbp.service;
 
-import com.example.proyectodbp.dto.InventarioRequestDTO;
-import com.example.proyectodbp.dto.InventarioResponseDTO;
+import com.example.proyectodbp.dto.request.InventarioRequestDTO;
+import com.example.proyectodbp.dto.response.InventarioResponseDTO;
 
 import java.util.List;
 

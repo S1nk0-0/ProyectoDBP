@@ -1,9 +1,9 @@
 package com.example.proyectodbp.service.impl;
 
-import com.example.proyectodbp.dto.CompraRequestDTO;
-import com.example.proyectodbp.dto.CompraResponseDTO;
-import com.example.proyectodbp.dto.DetalleCompraRequestDTO;
-import com.example.proyectodbp.dto.DetalleCompraResponseDTO;
+import com.example.proyectodbp.dto.request.CompraRequestDTO;
+import com.example.proyectodbp.dto.response.CompraResponseDTO;
+import com.example.proyectodbp.dto.request.DetalleCompraRequestDTO;
+import com.example.proyectodbp.dto.response.DetalleCompraResponseDTO;
 import com.example.proyectodbp.entity.Compra;
 import com.example.proyectodbp.entity.DetalleCompra;
 import com.example.proyectodbp.entity.EstadoCompra;

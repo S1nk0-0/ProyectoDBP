@@ -1,9 +1,9 @@
 package com.example.proyectodbp.service.impl;
 
-import com.example.proyectodbp.dto.LoginRequestDTO;
-import com.example.proyectodbp.dto.LoginResponseDTO;
-import com.example.proyectodbp.dto.UsuarioRequestDTO;
-import com.example.proyectodbp.dto.UsuarioResponseDTO;
+import com.example.proyectodbp.dto.request.LoginRequestDTO;
+import com.example.proyectodbp.dto.response.LoginResponseDTO;
+import com.example.proyectodbp.dto.request.UsuarioRequestDTO;
+import com.example.proyectodbp.dto.response.UsuarioResponseDTO;
 import com.example.proyectodbp.entity.Rol;
 import com.example.proyectodbp.entity.Usuario;
 import com.example.proyectodbp.exception.ResourceNotFoundException;

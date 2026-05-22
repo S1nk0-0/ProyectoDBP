@@ -1,9 +1,9 @@
 package com.example.proyectodbp.controller;
 
-import com.example.proyectodbp.dto.LoginRequestDTO;
-import com.example.proyectodbp.dto.LoginResponseDTO;
-import com.example.proyectodbp.dto.UsuarioRequestDTO;
-import com.example.proyectodbp.dto.UsuarioResponseDTO;
+import com.example.proyectodbp.dto.request.LoginRequestDTO;
+import com.example.proyectodbp.dto.response.LoginResponseDTO;
+import com.example.proyectodbp.dto.request.UsuarioRequestDTO;
+import com.example.proyectodbp.dto.response.UsuarioResponseDTO;
 import com.example.proyectodbp.service.UsuarioService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;

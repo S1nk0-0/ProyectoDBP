@@ -30,6 +30,11 @@ public class Producto {
     @Column(nullable = false)
     private Double precio;
 
+    @Positive
+    @NotNull
+    @Column(nullable = false)
+    private Double costoUnitario;
+
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "categoria_id", nullable = false)

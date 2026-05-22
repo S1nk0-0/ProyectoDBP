@@ -1,7 +1,7 @@
 package com.example.proyectodbp.controller;
 
-import com.example.proyectodbp.dto.CompraRequestDTO;
-import com.example.proyectodbp.dto.CompraResponseDTO;
+import com.example.proyectodbp.dto.request.CompraRequestDTO;
+import com.example.proyectodbp.dto.response.CompraResponseDTO;
 import com.example.proyectodbp.entity.EstadoCompra;
 import com.example.proyectodbp.service.CompraService;
 import jakarta.validation.Valid;

@@ -9,6 +9,7 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 
+
 @Getter
 @Setter
 @Entity
@@ -31,8 +32,16 @@ public class Usuario {
     @Column(length = 20)
     private String telefono;
 
+    @NotBlank
+    @Column(nullable = false)
+    private String password;
+
     @Column
     private String direccion;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private Rol rol;
 
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Compra> compras = new ArrayList<>();
