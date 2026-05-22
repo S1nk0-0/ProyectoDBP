@@ -29,6 +29,6 @@ import java.util.UUID;
 @EnableMethodSecurity
 public class SecurityConfig {}
 
-
+//
 // TODO: SecurityFilterChain, AuthenticationManager, KeyPair, JwtDecoder, JwtEncoder, JwtAuthenticationConverter, nose que mas
 
