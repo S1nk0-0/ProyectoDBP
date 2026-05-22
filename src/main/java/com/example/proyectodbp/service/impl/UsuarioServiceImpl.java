@@ -9,6 +9,7 @@ import com.example.proyectodbp.entity.Usuario;
 import com.example.proyectodbp.exception.ResourceNotFoundException;
 import com.example.proyectodbp.repository.UsuarioRepository;
 import com.example.proyectodbp.service.UsuarioService;
+
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -32,7 +33,7 @@ public class UsuarioServiceImpl implements UsuarioService {
     public UsuarioServiceImpl(UsuarioRepository usuarioRepository,
                                PasswordEncoder passwordEncoder,
                                AuthenticationManager authenticationManager,
-                               JwtEncoder jwtEncoder) {
+                               JwtEncoder jwtEncoder) { // TODO security
         this.usuarioRepository = usuarioRepository;
         this.passwordEncoder = passwordEncoder;
         this.authenticationManager = authenticationManager;
