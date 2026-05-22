@@ -3,8 +3,9 @@ package com.example.proyectodbp.entity;
 
 public enum TipoDePago {
     EFECTIVO,
-    TARJETA_CREDITO,
+    YAPE,
+    PLIN,
     TARJETA_DEBITO,
-    TRANSFERENCIA,
-    BILLETERA_DIGITAL
+    TARJETA_CREDITO,
+    TRANSFERENCIA
 }

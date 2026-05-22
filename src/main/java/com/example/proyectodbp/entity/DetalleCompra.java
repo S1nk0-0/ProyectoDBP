@@ -7,12 +7,11 @@ import jakarta.validation.constraints.PositiveOrZero;
 import lombok.Getter;
 import lombok.Setter;
 
-
 @Getter
 @Setter
 @Entity
-@Table(name = "detalle_de_venta")
-public class DetalleDeVenta {
+@Table(name = "detalle_compra")
+public class DetalleCompra {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,8 +19,8 @@ public class DetalleDeVenta {
 
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "venta_id", nullable = false)
-    private Venta venta;
+    @JoinColumn(name = "compra_id", nullable = false)
+    private Compra compra;
 
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY)
@@ -34,11 +33,12 @@ public class DetalleDeVenta {
 
     @Positive
     @NotNull
-    @Column(nullable = false)
+    @Column(nullable = false, precision = 12, scale = 2)
     private Double precioUnitario;
 
     @PositiveOrZero
     @NotNull
-    @Column(nullable = false)
+    @Column(nullable = false, precision = 12, scale = 2)
     private Double subtotal;
 }
+

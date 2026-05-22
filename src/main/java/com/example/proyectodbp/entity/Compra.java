@@ -1,20 +1,44 @@
 package com.example.proyectodbp.entity;
 
-import lombok.Data;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Setter
+@Entity
+@Table(name = "compra")
 public class Compra {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @NotNull
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "usuario_id", nullable = false)
     private Usuario usuario;
-    private Map<Producto, Integer> productos; // Producto -> cantidad
-    private BigDecimal total;
+
+    @OneToMany(mappedBy = "compra")
+    private List<DetalleCompra> detalles = new ArrayList<>();
+
+    @Positive
+    @NotNull
+    @Column(nullable = false, precision = 12, scale = 2)
+    private Double total;
+
+    @NotNull
+    @Column(nullable = false)
     private LocalDateTime fecha;
+
+    @NotNull
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private EstadoCompra estado;
 }
