@@ -8,5 +8,8 @@ Relaciones:
 
 
 TODO's :
-1. Repositorios por entidad. faltan los comandos
-6. application.properties configurar  PostgreSQL.
+- security
+- outh2
+- base de datos (dockers creo)
+- API de machine learning para servicios de análisis de datos,
+- Api para reenviar vouchers electrónicos.
